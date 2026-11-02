@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CESA &amp; CoBiVa — Corpus Metadata Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="viz-root">
+  <header class="page-header">
+    <div>
+      <h1>CESA &amp; CoBiVa participant metadata</h1>
+      <p class="subtitle">
+        <span class="swatch" style="background:var(--c-CESA)"></span><strong>CESA</strong> — Corpus del Español en el Sur de Arizona (Tucson, AZ)
+        &nbsp;·&nbsp;
+        <span class="swatch" style="background:var(--c-CoBiVa)"></span><strong>CoBiVa</strong> — Corpus Bilingüe del Valle (Rio Grande Valley, TX)
+      </p>
+    </div>
+    <button id="theme-toggle" class="btn" type="button" aria-label="Toggle dark mode">Dark mode</button>
+  </header>
+
+  <section class="links">
+    <p>Jump to:</p>
+      <ul>
+        <li><a href="#demographics">Demographics</a></li>
+        <li><a href="#history">Linguistic history</a></li>
+        <li><a href="#language_use">Language Use</a></li>
+        <li><a href="#competency_attitudes">Competency &amp; Attitudes</a></li>
+      </ul>
+      
+
+  
+  </section>
+
+  <section class="filters" aria-label="Filters">
+    <label>Corpus
+      <select id="f-corpus">
+        <option value="both">Both corpora</option>
+        <option value="CESA">CESA only</option>
+        <option value="CoBiVa">CoBiVa only</option>
+      </select>
+    </label>
+    <label>Sex
+      <select id="f-sex">
+        <option value="all">All</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+      </select>
+    </label>
+    <label>Generation
+      <select id="f-gen">
+        <option value="all">All</option>
+        <option value="1">1st generation</option>
+        <option value="2">2nd generation</option>
+        <option value="3">3rd generation</option>
+      </select>
+    </label>
+    <label>Age
+      <select id="f-age">
+        <option value="all">All ages</option>
+        <option value="0-24">Under 25</option>
+        <option value="25-39">25–39</option>
+        <option value="40-200">40 and over</option>
+      </select>
+    </label>
+    <label>Counts as
+      <select id="f-scale">
+        <option value="pct">% of corpus</option>
+        <option value="n">Number of participants</option>
+      </select>
+    </label>
+    <button id="f-reset" class="btn" type="button">Reset</button>
+    <span id="f-summary" class="filter-summary" aria-live="polite"></span>
+  </section>
+
+  <section id="kpis" class="kpis" aria-label="Summary"></section>
+
+  <h2 class="section-title" id="demographics">Demographics</h2>
+  <div class="grid">
+    <article class="card" data-chart="age"></article>
+    <article class="card" data-chart="generation"></article>
+    <article class="card" data-chart="education"></article>
+    <article class="card" data-chart="birthplace"></article>
+  </div>
+
+  <h2 class="section-title" id="history">Linguistic history</h2>
+  <div class="grid">
+    <article class="card wide" data-chart="history"></article>
+  </div>
+
+  <h2 class="section-title" id="language_use">Language use</h2>
+  <div class="grid">
+    <article class="card wide" data-chart="use"></article>
+  </div>
+
+  <h2 class="section-title"  id="competency_attitudes">Competency &amp; Attitudes</h2>
+  <div class="grid">
+    <article class="card" data-chart="competency"></article>
+    <article class="card" data-chart="attitudes"></article>
+  </div>
+
+  <footer class="page-footer">
+    Means exclude blank and non-numeric answers. Competency and attitude items use the questionnaire's 0–6 scale.
+  </footer>
+</div>
+<div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
