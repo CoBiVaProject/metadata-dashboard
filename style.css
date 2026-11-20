@@ -9,8 +9,9 @@
   --axis: #c3c2b7;
   --border: rgba(11, 11, 11, 0.10);
   --wash: rgba(11, 11, 11, 0.04);
+  /* CESA = University of Arizona (Arizona Blue); CoBiVa = UTRGV (accessible digital orange) */
   --c-CESA: #0C234B;
-  --c-CoBiVa: #F05023;
+  --c-CoBiVa: #CB4900;
 }
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) .viz-root,
@@ -25,8 +26,8 @@
     --axis: #383835;
     --border: rgba(255, 255, 255, 0.10);
     --wash: rgba(255, 255, 255, 0.05);
-    --c-CESA: #AB0520;
-    --c-CoBiVa: #F05023;
+    --c-CESA: #81CEEB;   /* UA "Rain" — Arizona Blue is invisible on dark */
+    --c-CoBiVa: #F05023; /* UTRGV Orange */
   }
 }
 :root[data-theme="dark"] .viz-root,
@@ -41,7 +42,7 @@
   --axis: #383835;
   --border: rgba(255, 255, 255, 0.10);
   --wash: rgba(255, 255, 255, 0.05);
-  --c-CESA: #AB0520;
+  --c-CESA: #81CEEB;
   --c-CoBiVa: #F05023;
 }
 
@@ -116,6 +117,8 @@ a {
 .legend-item { display: inline-flex; align-items: center; }
 .legend-dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
 .legend-line { width: 16px; height: 0; border-top: 1px solid var(--text-muted); margin-right: 5px; }
+.legend-size { width: 13px; height: 13px; border-radius: 50%; border: 1px solid var(--text-muted); margin-right: 5px; }
+.axis .domain { display: none; }
 .chart { width: 100%; }
 .chart svg { display: block; width: 100%; overflow: visible; }
 .empty { color: var(--text-muted); padding: 40px 0; text-align: center; }
@@ -153,7 +156,7 @@ table.data-table { border-collapse: collapse; width: 100%; font-size: 12.5px; fo
   padding: 8px 10px; font: 12px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
   max-width: 280px;
   --surface-1: #fcfcfb; --text-primary: #0b0b0b; --text-secondary: #52514e; --border: rgba(11,11,11,.1);
-  --c-CESA: #0C234B; --c-CoBiVa: #F05023;
+  --c-CESA: #0C234B; --c-CoBiVa: #CB4900;
 }
 .tooltip .tt-title { font-weight: 600; margin-bottom: 4px; }
 .tooltip .tt-row { display: flex; align-items: center; gap: 6px; color: var(--text-secondary); }
