@@ -1,0 +1,74 @@
+LICENSE
+
+Copyright (c) 2026 CoBiva and CESA projects. All rights reserved where not otherwise stated below.
+
+This repository has two separately licensed parts:
+
+  PART 1 - SOURCE CODE   -> GNU General Public License v3.0 (open source)
+  PART 2 - DATA          -> Proprietary, all rights reserved (NOT open source)
+
+Being allowed to use the source code does NOT give you any right to the data.
+
+==============================================================================
+PART 1 - SOURCE CODE (GNU GPL v3.0 or later)
+==============================================================================
+
+"Source Code" means the software in this repository, including all Python
+scripts (*.py files) and any related documentation of the software.
+
+The Source Code is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+The Source Code is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+details.
+
+The full text of the GNU General Public License v3.0 is available at:
+https://www.gnu.org/licenses/gpl-3.0.txt
+
+In short, you may use, study, modify, and share the Source Code, as long as
+any modified or redistributed versions are also released under the GNU GPL
+v3.0 (or later), include this license notice, and make their source code
+available.
+
+==============================================================================
+PART 2 - DATA (PROPRIETARY - ALL RIGHTS RESERVED)
+==============================================================================
+
+"Data" means all research data and material in or connected with this
+repository, including but not limited to:
+
+  - transcripts, audio, and any recordings;
+  - derived or processed data files (e.g., .JS, and
+    CSV, TXT, or other files made from the transcripts);
+  - any output made by running the Source Code on the Data.
+
+The Data is proprietary and confidential. It is NOT covered by the GNU
+General Public License or by any other open license. No license or right of
+any kind is granted for the Data.
+
+You may NOT, in whole or in part:
+
+  1. use, access, analyze, or process the Data for any purpose;
+  2. copy, reproduce, download, or store the Data;
+  3. share, publish, distribute, upload, post, sell, lend, or otherwise make
+     the Data available to anyone;
+  4. modify, adapt, translate, or create derived works from the Data,
+     including derived datasets, corpora, statistics, or excerpts;
+  5. use the Data to train, fine-tune, or evaluate any machine learning or
+     artificial intelligence model;
+  6. try to identify any person in the Data.
+
+If you received a copy of the Data without written permission, you must
+delete all copies right away and tell the copyright holder.
+
+
+==============================================================================
+IF YOU ARE UNSURE
+==============================================================================
+
+If you are not sure whether a file is Source Code or Data, treat it as Data
+(proprietary) until the copyright holder says in writing that it is not.
